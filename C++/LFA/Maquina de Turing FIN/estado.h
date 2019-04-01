@@ -5,13 +5,20 @@
 #include<vector>
 
 #include"transicao.h"
+
 using namespace std;
 
 class Transicao;
 
-class Estado
-{
+class Estado{
+
 public:
+
+    /**
+     * @brief nome, nome do estado
+     * @brief transicao, vetor de transicoes
+     * @brief final, se o estado eh final ou nao
+     */
     string *nome;
     vector<Transicao*> *transicao;
     bool final;
@@ -51,8 +58,6 @@ public:
      * Pos-condicao: nenhuma
      */
     Transicao *getTransicao(char simbolo);
-
-    ~Estado();
 
 };
 

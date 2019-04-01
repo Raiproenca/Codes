@@ -10,16 +10,20 @@ class Estado;
 class Transicao
 {
 public:
+
     char simboloLido;
     char simboloEsc;
     int direcao;
     Estado *estado;
+
     /**
      * @brief Transicao, inicializa os campos
      * @param simboloL, simbolo lido
      * @param simboloE, simbolo escrito
      * @param estado, estado de chegada
      * @param direcao, direcao do movimento
+     * Pre-condicao: nenhuma
+     * Pos-condicao: nenhuma
      */
     Transicao(char simboloL, char simboloE, Estado *estado, int direcao );
 };
